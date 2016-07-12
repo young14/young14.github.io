@@ -598,7 +598,8 @@
 
 	         	document.getElementById('wf').onmousemove = function mouseMoveActor(event)
 		        {
-		            var e = event || window.event;		           
+		            var e = event || window.event;
+		            console.log(e.clientX, document.body.clientWidth);
 		            if((e.clientX - (document.body.clientWidth / 2)) > 150)
 		            {
 		                mousepos = -1;
