@@ -599,12 +599,12 @@
 	         	document.getElementById('wf').onmousemove = function mouseMoveActor(event)
 		        {
 		            var e = event || window.event;
-		            if((e.clientX - (document.body.width / 2)) > 150)
+		            if((e.clientX - (document.body.clientWidth / 2)) > 150)
 		            {
 		                mousepos = -1;
 		                //person_model.rotation.y -= 0.01;
 		            }    
-		            else if((e.clientX - (document.body.width / 2)) < -150)
+		            else if((e.clientX - (document.body.clientWidth / 2)) < -150)
 		            {
 		                mousepos = 1;
 		                //person_model.rotation.y += 0.01;
