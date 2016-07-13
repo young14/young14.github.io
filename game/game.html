@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Monster Or Treasure</title>
+	</head>
+	<body id="wf">
+		<div id="leftpoint"><h5>left:0</h5></div>
+		<div id="heropoint"></div>
+		<div id="hp_bar"></div>
+		<input type="button" id="backbutton" value ="返回" />
+		<link rel="stylesheet" type="text/css" href="game.css">
+		<script src="./jquery-3.0.0.min.js"></script>
+		<script src="js/three.js"></script>
+		<script src="JSONLoader.js"></script>
+		<script src="ImageLoader.js"></script>
+		<script src="game.js"></script>		
+		<div id='startpage'>
+			<img id = "startpic" src ="startbg.jpg">
+			<right>
+				<input type="button" id="startbutton" value ="开始"/ >
+				<P></P>
+				<input type="button" value ="帮助" id="helpbutton"/ >
+			</right>
+		</div>
+		<div id="out-window"></div>		
+		<script src="button_set.js"></script>	
+		<div id='endpage'>
+			<img id = "endpic" src ="end.jpg">
+		</div>		
+		<div id='winpage'>	
+		<img id = "winpic" src ="win.jpg">
+			<script src="set_pic_size.js"></script>		
+			<p></p>
+			<h1></h1>
+			<h1 class="winmessage_1">　YOU WIN!٩(๑òωó๑)۶</h1>
+			<h1 class="winmessage_2">　CONGRATULATION!</h1>
+		</div>
+	</body>	
+</html>

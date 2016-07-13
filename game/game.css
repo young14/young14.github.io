@@ -1,0 +1,145 @@
+body
+{ 
+	margin: 0; 
+	overflow: hidden;
+}
+
+#startbutton
+{
+	height:100px; 
+	width: 200px; 
+	font-size: 24px;
+	color: #F00; 
+	background: #FC9; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#helpbutton
+{
+	height:100px; 
+	width: 200px; 
+	font-size: 24px;
+	color: #FFC ; 
+	background: #FC9; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#heropoint
+{
+	width: 4px;
+	height:4px;
+	border-radius: 4px;
+	position: absolute;
+	background-color: red;		
+	display: none;
+}
+
+#leftpoint
+{
+	width: 150px;
+	height: 20px;
+	border: 2px solid black;
+	position: absolute;;
+	background-color: white;
+	display: none;
+	right: 200px;
+	top: 0px;
+	font-size: 15px;
+	font-family: "楷体";
+}
+
+#hp_bar
+{
+	position: absolute;
+	height: 20px;
+	background-color: red;
+	bottom:0px;
+	left: 0;
+}
+
+#startpage
+{
+	height:700px;
+	width:1400px;
+	overflow:auto;
+	background:url("startbg.jpg"); 
+	background-position:center;
+	z-index: 100;
+}
+
+#out-window
+{
+	border: 2px solid black;				
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	left:400px;
+	top:500px;
+	background-color: pink;
+	font-family: "楷体";
+	display:none;
+	z-index:100;
+}
+
+#backbutton
+{
+	width: 100px;
+	height: 50px;
+	z-index: 2;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 20px;
+	font-family: "楷体";
+	display: none;
+	background-color: #87CEEB;
+}
+
+#endpage
+{
+	overflow:auto;  
+	font-size: 36px; 
+	color: #CCC; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	z-index: -1;
+	display: none;
+}
+
+#winpage
+{
+	overflow:auto; 
+	font-size: 36px; 
+	color: #CCC; 
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	z-index: -1;
+	display: none;
+}
+#endpic
+{
+	background-repeat: no-repeat;
+	position:absolute;
+	z-index:-1;
+}
+#startpic
+{
+	position:absolute;
+	z-index:-1;
+}
+#winpic
+{
+	background-repeat: no-repeat;
+	position:absolute;
+	z-index:-1;
+}
+
+#winmessage_1{
+	font-family:Georgia, 'Times New Roman', Times, serif; 
+	font-size:32px; 
+	color:#909；
+}
+
+#winmessage_2{
+	font-family:Georgia, 'Times New Roman', Times, serif; 
+	font-size:36px; 
+	color:#909；
+}
