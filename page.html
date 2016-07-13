@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>扫雷</title>
+		<title>起不了名字的游戏</title>
 		<style>
 			body{ 
 				margin: 0; 
@@ -599,13 +599,12 @@
 	         	document.getElementById('wf').onmousemove = function mouseMoveActor(event)
 		        {
 		            var e = event || window.event;
-		            console.log(e.clientX, document.body.clientWidth);
-		            if((e.clientX - (document.body.clientWidth / 2)) > 150)
+		            if((e.clientX - (document.body.width / 2)) > 150)
 		            {
 		                mousepos = -1;
 		                //person_model.rotation.y -= 0.01;
 		            }    
-		            else if((e.clientX - (document.body.clientWidth / 2)) < -150)
+		            else if((e.clientX - (document.body.width / 2)) < -150)
 		            {
 		                mousepos = 1;
 		                //person_model.rotation.y += 0.01;
@@ -660,6 +659,7 @@
 		    			var dig_pos = person_model.position;
 		    			var row = Math.floor((dig_pos.x + 10) / cube_side_length);
 		    			var col = Math.floor((dig_pos.z + 10) / cube_side_length);
+		    			console.log(row, col);
 
 		    			if(move_map[row][col] != 0)
 		    			{
@@ -691,6 +691,7 @@
 		    			two_dim_map_list[row][col].innerHTML = around_count;
 
 		    			$('#leftpoint').html("剩余宝藏数: " + leftnum);
+
 		    			if(leftnum <= 0)
 		    			{
 		    				clearScene();
